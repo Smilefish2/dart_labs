@@ -39,6 +39,7 @@ import 'package:learn_dart_with_cli/dart-by-example/async_star.dart';
 import 'package:learn_dart_with_cli/dart-by-example/await_for.dart';
 import 'package:learn_dart_with_cli/dart-by-example/yield_star.dart';
 import 'package:learn_dart_with_cli/dart-by-example/zones.dart';
+import 'package:learn_dart_with_cli/dart-by-example/microtasks.dart';
 
 void main(List<String> arguments) {
   try{
@@ -84,6 +85,7 @@ void main(List<String> arguments) {
       ..addCommand(AwaitForCommand())
       ..addCommand(YieldStarCommand())
       ..addCommand(ZonesCommand())
+      ..addCommand(MicroTasksCommand())
       ..run(arguments); // args
 
   } on Exception catch (error, stackTrace) {
