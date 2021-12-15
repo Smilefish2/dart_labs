@@ -28,6 +28,7 @@ import 'package:learn_dart_with_cli/dart-by-example/inheritance.dart';
 import 'package:learn_dart_with_cli/dart-by-example/mixins.dart';
 import 'package:learn_dart_with_cli/dart-by-example/libraries.dart';
 import 'package:learn_dart_with_cli/dart-by-example/pub.dart';
+import 'package:learn_dart_with_cli/dart-by-example/comments.dart';
 
 void main(List<String> arguments) {
   try{
@@ -62,6 +63,7 @@ void main(List<String> arguments) {
       ..addCommand(MixinsCommand())
       ..addCommand(LibrariesCommand())
       ..addCommand(PubCommand())
+      ..addCommand(CommentsCommand())
       ..run(arguments); // args
 
   } on Exception catch (error, stackTrace) {
