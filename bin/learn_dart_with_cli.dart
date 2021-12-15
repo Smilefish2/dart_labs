@@ -1,10 +1,12 @@
 import 'package:args/command_runner.dart';
 import 'package:learn_dart_with_cli/dart-by-example/hello_world.dart';
+import 'package:learn_dart_with_cli/dart-by-example/values.dart';
 
 void main(List<String> arguments) {
   try{
     var runner = CommandRunner('learn-dart-with-cli', 'learn dart with cli')
       ..addCommand(HelloWorldCommand())
+      ..addCommand(ValuesCommand())
       ..run(arguments); // args
 
   } on Exception catch (error, stackTrace) {
