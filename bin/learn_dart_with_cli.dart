@@ -24,6 +24,7 @@ import 'package:learn_dart_with_cli/dart-by-example/classes.dart';
 import 'package:learn_dart_with_cli/dart-by-example/constructors.dart';
 import 'package:learn_dart_with_cli/dart-by-example/initializer_lists.dart';
 import 'package:learn_dart_with_cli/dart-by-example/getters_setters.dart';
+import 'package:learn_dart_with_cli/dart-by-example/inheritance.dart';
 
 void main(List<String> arguments) {
   try{
@@ -54,6 +55,7 @@ void main(List<String> arguments) {
       ..addCommand(ConstructorsCommand())
       ..addCommand(InitializerListsCommand())
       ..addCommand(GettersSettersCommand())
+      ..addCommand(InheritanceCommand())
       ..run(arguments); // args
 
   } on Exception catch (error, stackTrace) {
