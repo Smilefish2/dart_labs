@@ -13,6 +13,7 @@ import 'package:learn_dart_with_cli/dart-by-example/map.dart';
 import 'package:learn_dart_with_cli/dart-by-example/set.dart';
 import 'package:learn_dart_with_cli/dart-by-example/queue.dart';
 import 'package:learn_dart_with_cli/dart-by-example/functions.dart';
+import 'package:learn_dart_with_cli/dart-by-example/optional_params.dart';
 
 void main(List<String> arguments) {
   try{
@@ -32,6 +33,7 @@ void main(List<String> arguments) {
       ..addCommand(SetCommand())
       ..addCommand(QueueCommand())
       ..addCommand(FunctionsCommand())
+      ..addCommand(OptionalParamsCommand())
       ..run(arguments); // args
 
   } on Exception catch (error, stackTrace) {
