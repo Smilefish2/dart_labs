@@ -30,6 +30,7 @@ import 'package:learn_dart_with_cli/dart-by-example/libraries.dart';
 import 'package:learn_dart_with_cli/dart-by-example/pub.dart';
 import 'package:learn_dart_with_cli/dart-by-example/comments.dart';
 import 'package:learn_dart_with_cli/dart-by-example/futures.dart';
+import 'package:learn_dart_with_cli/dart-by-example/streams.dart';
 
 void main(List<String> arguments) {
   try{
@@ -66,6 +67,7 @@ void main(List<String> arguments) {
       ..addCommand(PubCommand())
       ..addCommand(CommentsCommand())
       ..addCommand(FuturesCommand())
+      ..addCommand(StreamsCommand())
       ..run(arguments); // args
 
   } on Exception catch (error, stackTrace) {
