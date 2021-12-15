@@ -22,6 +22,7 @@ import 'package:learn_dart_with_cli/dart-by-example/final.dart';
 import 'package:learn_dart_with_cli/dart-by-example/static.dart';
 import 'package:learn_dart_with_cli/dart-by-example/classes.dart';
 import 'package:learn_dart_with_cli/dart-by-example/constructors.dart';
+import 'package:learn_dart_with_cli/dart-by-example/initializer_lists.dart';
 
 void main(List<String> arguments) {
   try{
@@ -50,6 +51,7 @@ void main(List<String> arguments) {
       ..addCommand(StaticCommand())
       ..addCommand(ClassesCommand())
       ..addCommand(ConstructorsCommand())
+      ..addCommand(InitializerListsCommand())
       ..run(arguments); // args
 
   } on Exception catch (error, stackTrace) {
