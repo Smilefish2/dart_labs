@@ -3,10 +3,9 @@ import 'package:args/command_runner.dart';
 class ValuesCommand extends Command {
   @override
   final name = 'dart-by-example:values';
+
   @override
   final description = 'https://www.jpryan.me/dartbyexample/examples/values/';
-
-  ValuesCommand();
 
   @override
   void run() {
