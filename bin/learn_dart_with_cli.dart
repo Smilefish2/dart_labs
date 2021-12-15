@@ -18,6 +18,7 @@ import 'package:learn_dart_with_cli/dart-by-example/lexical_scope.dart';
 import 'package:learn_dart_with_cli/dart-by-example/typedef.dart';
 import 'package:learn_dart_with_cli/dart-by-example/unused_variables.dart';
 import 'package:learn_dart_with_cli/dart-by-example/const.dart';
+import 'package:learn_dart_with_cli/dart-by-example/final.dart';
 
 void main(List<String> arguments) {
   try{
@@ -42,6 +43,7 @@ void main(List<String> arguments) {
       ..addCommand(TypedefCommand())
       ..addCommand(UnusedVariablesCommand())
       ..addCommand(ConstCommand())
+      ..addCommand(FinalCommand())
       ..run(arguments); // args
 
   } on Exception catch (error, stackTrace) {
