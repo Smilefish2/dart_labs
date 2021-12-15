@@ -10,14 +10,16 @@ class ListCommand extends Command {
   @override
   void run() {
     // Specifying the length creates a fixed-length list.
-    var list = new List(3);
+    // var list = new List(3);
+    var list = []..length = 3;
     list[0] = 'a';
     list[1] = 'b';
     list[2] = 'c';
     print(list);
 
     // Leaving out the lenght creates a growable list.
-    var growable = new List();
+    // var growable = List();
+    var growable = [];
     growable.addAll(['grow', 'able']);
     print(growable);
 
