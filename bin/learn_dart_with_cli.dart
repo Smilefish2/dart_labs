@@ -16,6 +16,7 @@ import 'package:learn_dart_with_cli/dart-by-example/functions.dart';
 import 'package:learn_dart_with_cli/dart-by-example/optional_params.dart';
 import 'package:learn_dart_with_cli/dart-by-example/lexical_scope.dart';
 import 'package:learn_dart_with_cli/dart-by-example/typedef.dart';
+import 'package:learn_dart_with_cli/dart-by-example/unused_variables.dart';
 
 void main(List<String> arguments) {
   try{
@@ -38,6 +39,7 @@ void main(List<String> arguments) {
       ..addCommand(OptionalParamsCommand())
       ..addCommand(LexicalScopeCommand())
       ..addCommand(TypedefCommand())
+      ..addCommand(UnusedVariablesCommand())
       ..run(arguments); // args
 
   } on Exception catch (error, stackTrace) {
