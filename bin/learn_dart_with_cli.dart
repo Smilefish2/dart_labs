@@ -14,6 +14,7 @@ import 'package:learn_dart_with_cli/dart-by-example/set.dart';
 import 'package:learn_dart_with_cli/dart-by-example/queue.dart';
 import 'package:learn_dart_with_cli/dart-by-example/functions.dart';
 import 'package:learn_dart_with_cli/dart-by-example/optional_params.dart';
+import 'package:learn_dart_with_cli/dart-by-example/lexical_scope.dart';
 
 void main(List<String> arguments) {
   try{
@@ -34,6 +35,7 @@ void main(List<String> arguments) {
       ..addCommand(QueueCommand())
       ..addCommand(FunctionsCommand())
       ..addCommand(OptionalParamsCommand())
+      ..addCommand(LexicalScopeCommand())
       ..run(arguments); // args
 
   } on Exception catch (error, stackTrace) {
