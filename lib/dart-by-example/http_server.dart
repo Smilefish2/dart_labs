@@ -21,7 +21,7 @@ class HttpServerCommand extends Command {
     await for (HttpRequest req in server) {
       // resposne
       req.response
-        ..write("welcome to my dart server")
+        ..write('welcome to my dart server')
         ..close();
     }
   }

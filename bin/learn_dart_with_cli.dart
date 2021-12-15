@@ -42,6 +42,7 @@ import 'package:learn_dart_with_cli/dart-by-example/zones.dart';
 import 'package:learn_dart_with_cli/dart-by-example/microtasks.dart';
 import 'package:learn_dart_with_cli/dart-by-example/isolates.dart';
 import 'package:learn_dart_with_cli/dart-by-example/http_server.dart';
+import 'package:learn_dart_with_cli/dart-by-example/http_request.dart';
 
 void main(List<String> arguments) {
   try{
@@ -90,6 +91,7 @@ void main(List<String> arguments) {
       ..addCommand(MicroTasksCommand())
       ..addCommand(IsolatesCommand())
       ..addCommand(HttpServerCommand())
+      ..addCommand(HttpRequestCommand())
       ..run(arguments); // args
 
   } on Exception catch (error, stackTrace) {
