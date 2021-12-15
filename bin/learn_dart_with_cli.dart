@@ -27,6 +27,7 @@ import 'package:learn_dart_with_cli/dart-by-example/getters_setters.dart';
 import 'package:learn_dart_with_cli/dart-by-example/inheritance.dart';
 import 'package:learn_dart_with_cli/dart-by-example/mixins.dart';
 import 'package:learn_dart_with_cli/dart-by-example/libraries.dart';
+import 'package:learn_dart_with_cli/dart-by-example/pub.dart';
 
 void main(List<String> arguments) {
   try{
@@ -60,6 +61,7 @@ void main(List<String> arguments) {
       ..addCommand(InheritanceCommand())
       ..addCommand(MixinsCommand())
       ..addCommand(LibrariesCommand())
+      ..addCommand(PubCommand())
       ..run(arguments); // args
 
   } on Exception catch (error, stackTrace) {
