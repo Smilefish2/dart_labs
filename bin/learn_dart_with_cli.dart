@@ -35,6 +35,7 @@ import 'package:learn_dart_with_cli/dart-by-example/iterators.dart';
 import 'package:learn_dart_with_cli/dart-by-example/iterables.dart';
 import 'package:learn_dart_with_cli/dart-by-example/async_await.dart';
 import 'package:learn_dart_with_cli/dart-by-example/generators.dart';
+import 'package:learn_dart_with_cli/dart-by-example/async_star.dart';
 
 void main(List<String> arguments) {
   try{
@@ -76,6 +77,7 @@ void main(List<String> arguments) {
       ..addCommand(IterablesCommand())
       ..addCommand(AsyncAwaitCommand())
       ..addCommand(GeneratorsCommand())
+      ..addCommand(AsyncStarCommand())
       ..run(arguments); // args
 
   } on Exception catch (error, stackTrace) {
