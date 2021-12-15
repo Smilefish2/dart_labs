@@ -7,6 +7,7 @@ import 'package:learn_dart_with_cli/dart-by-example/if_else.dart';
 import 'package:learn_dart_with_cli/dart-by-example/null_aware.dart';
 import 'package:learn_dart_with_cli/dart-by-example/while.dart';
 import 'package:learn_dart_with_cli/dart-by-example/switch.dart';
+import 'package:learn_dart_with_cli/dart-by-example/exceptions.dart';
 
 void main(List<String> arguments) {
   try{
@@ -20,6 +21,7 @@ void main(List<String> arguments) {
       ..addCommand(NullAwareCommand())
       ..addCommand(WhileCommand())
       ..addCommand(SwitchCommand())
+      ..addCommand(ExceptionsCommand())
       ..run(arguments); // args
 
   } on Exception catch (error, stackTrace) {
