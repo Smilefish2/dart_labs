@@ -21,6 +21,7 @@ import 'package:learn_dart_with_cli/dart-by-example/const.dart';
 import 'package:learn_dart_with_cli/dart-by-example/final.dart';
 import 'package:learn_dart_with_cli/dart-by-example/static.dart';
 import 'package:learn_dart_with_cli/dart-by-example/classes.dart';
+import 'package:learn_dart_with_cli/dart-by-example/constructors.dart';
 
 void main(List<String> arguments) {
   try{
@@ -48,6 +49,7 @@ void main(List<String> arguments) {
       ..addCommand(FinalCommand())
       ..addCommand(StaticCommand())
       ..addCommand(ClassesCommand())
+      ..addCommand(ConstructorsCommand())
       ..run(arguments); // args
 
   } on Exception catch (error, stackTrace) {
