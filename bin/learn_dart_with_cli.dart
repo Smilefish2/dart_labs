@@ -2,6 +2,7 @@ import 'package:args/command_runner.dart';
 import 'package:learn_dart_with_cli/dart-by-example/hello_world.dart';
 import 'package:learn_dart_with_cli/dart-by-example/values.dart';
 import 'package:learn_dart_with_cli/dart-by-example/variables.dart';
+import 'package:learn_dart_with_cli/dart-by-example/for.dart';
 
 void main(List<String> arguments) {
   try{
@@ -9,6 +10,7 @@ void main(List<String> arguments) {
       ..addCommand(HelloWorldCommand())
       ..addCommand(ValuesCommand())
       ..addCommand(VariablesCommand())
+      ..addCommand(ForCommand())
       ..run(arguments); // args
 
   } on Exception catch (error, stackTrace) {
