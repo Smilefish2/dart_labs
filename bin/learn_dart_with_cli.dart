@@ -11,6 +11,7 @@ import 'package:learn_dart_with_cli/dart-by-example/exceptions.dart';
 import 'package:learn_dart_with_cli/dart-by-example/list.dart';
 import 'package:learn_dart_with_cli/dart-by-example/map.dart';
 import 'package:learn_dart_with_cli/dart-by-example/set.dart';
+import 'package:learn_dart_with_cli/dart-by-example/queue.dart';
 
 void main(List<String> arguments) {
   try{
@@ -27,7 +28,7 @@ void main(List<String> arguments) {
       ..addCommand(ExceptionsCommand())
       ..addCommand(ListCommand())
       ..addCommand(MapCommand())
-      ..addCommand(SetCommand())
+      ..addCommand(QueueCommand())
       ..run(arguments); // args
 
   } on Exception catch (error, stackTrace) {
