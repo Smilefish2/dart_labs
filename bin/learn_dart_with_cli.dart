@@ -4,6 +4,7 @@ import 'package:learn_dart_with_cli/dart-by-example/values.dart';
 import 'package:learn_dart_with_cli/dart-by-example/variables.dart';
 import 'package:learn_dart_with_cli/dart-by-example/for.dart';
 import 'package:learn_dart_with_cli/dart-by-example/if_else.dart';
+import 'package:learn_dart_with_cli/dart-by-example/null_aware.dart';
 
 void main(List<String> arguments) {
   try{
@@ -14,6 +15,7 @@ void main(List<String> arguments) {
       ..addCommand(VariablesCommand())
       ..addCommand(ForCommand())
       ..addCommand(IfElseCommand())
+      ..addCommand(NullAwareCommand())
       ..run(arguments); // args
 
   } on Exception catch (error, stackTrace) {
