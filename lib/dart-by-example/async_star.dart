@@ -8,7 +8,7 @@ Stream printNumbersDownAsync(int n) async* {
 }
 
 Future<String> loadMessageForNumber(int i) async {
-  await new Future.delayed(new Duration(milliseconds: 50));
+  await Future.delayed(Duration(milliseconds: 50));
   if (i % 2 == 0) {
     return '$i is even';
   } else {

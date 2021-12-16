@@ -4,13 +4,13 @@ import 'package:args/command_runner.dart';
 
 class Position {
   int _x;
-  int _y;
+  final int _y;
 
   Position(this._x, this._y);
 
   double get rad => atan2(_y, _x);
 
-  void set x(int val) {
+  set x(int val) {
     _x = val;
   }
 }

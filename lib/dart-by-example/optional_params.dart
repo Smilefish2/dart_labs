@@ -8,7 +8,7 @@ String yell(String str, [bool exclaim = false]) {
 }
 
 // named optional parameters
-String whisper(String str, {bool mysteriously: false}) {
+String whisper(String str, {bool mysteriously = false}) {
   var result = str.toLowerCase();
   if (mysteriously) result = result + '...';
   return result;

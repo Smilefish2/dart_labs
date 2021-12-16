@@ -13,14 +13,14 @@ class WhileCommand extends Command {
 
     // while conditions are evaluated before the loop
     while(i++ < 2) {
-      print("while $i");
+      print('while $i');
     }
 
     var j = 0;
 
     // do-while conditions are evaluated after the loop
     do {
-      print("dowhile $j");
+      print('dowhile $j');
     } while (j++ < 2);
   }
 }

@@ -22,14 +22,16 @@ class FinalCommand extends Command {
 
     try {
       // foo = 'goodbye'; // runtime error; already assigned
+      print(foo);
     } catch(e) {
       print('error');
     }
 
-    var pos = new Position(4);
+    var pos = Position(4);
 
     try {
       // pos.x = 100; // runtime error
+      print(pos);
     } catch(e) {
       print('error');
     }

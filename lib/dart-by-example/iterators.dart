@@ -14,7 +14,7 @@ class IteratorsCommand extends Command {
       print(iter.current);
     }
 
-    var iterable = new Iterable.generate(3);
+    var iterable = Iterable.generate(3);
     var iter2 = iterable.map((n) => n*2).iterator;
     while(iter2.moveNext()) {
       print(iter2.current);

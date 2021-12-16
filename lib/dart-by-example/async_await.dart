@@ -30,10 +30,10 @@ class AsyncAwaitCommand extends Command {
   void run() async {
     // 'await' will suspend execution of the function until the
     // future completes:
-    var gregsLastName = await loadLastName('greg');
-    var stevesLastName = await loadLastName2('steve');
+    var gregLastName = await loadLastName('greg');
+    var steveLastName = await loadLastName2('steve');
 
-    print('greg $gregsLastName');
-    print('steve $stevesLastName');
+    print('greg $gregLastName');
+    print('steve $steveLastName');
   }
 }

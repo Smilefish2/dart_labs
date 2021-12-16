@@ -10,7 +10,7 @@ class MapCommand extends Command {
   @override
   void run() {
     // adding keys
-    var colors = new Map();
+    var colors = {};
     colors['blue'] = false;
     colors['red'] = true;
     print(colors);
@@ -25,7 +25,11 @@ class MapCommand extends Command {
     // keys and values can be iterated.
     // HashMap iterates in arbitrary order, while LinkedHashMap, and SplayTreeMap
     // iterate in the order they were inserted into the map.
-    for (var key in shapes.keys) print(key);
-    for (var value in shapes.values) print(value);
+    for (var key in shapes.keys) {
+      print(key);
+    }
+    for (var value in shapes.values) {
+      print(value);
+    }
   }
 }

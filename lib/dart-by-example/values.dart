@@ -10,11 +10,11 @@ class ValuesCommand extends Command {
   @override
   void run() {
     // Strings can be appended using +
-    print("dart" + "lang");
+    print('dart' + 'lang');
 
     // Integers and Floats
-    print("1+1=${1+1}");
-    print("7.0/3.0 =${7.0/3.0}");
+    print('1+1=${1+1}');
+    print('7.0/3.0 =${7.0/3.0}');
 
     // Booleans
     print(true && false);

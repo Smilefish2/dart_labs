@@ -18,6 +18,7 @@ class Position {
     return Position(m['x'], m['y']);
   }
 
+  @override
   String toString() => '[$x, $y]';
 }
 

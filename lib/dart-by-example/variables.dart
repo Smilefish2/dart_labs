@@ -10,7 +10,7 @@ class VariablesCommand extends Command {
   @override
   void run() {
     // 'var' declares a variable.  dartanalyzer infers the type.
-    var a = "initial";
+    var a = 'initial';
     print(a);
 
     // The type can also be declared:
