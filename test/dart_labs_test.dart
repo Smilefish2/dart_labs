@@ -1,4 +1,4 @@
-import 'package:learn_dart_with_cli/learn_dart_with_cli.dart';
+import 'package:dart_labs/dart_labs.dart';
 import 'package:test/test.dart';
 
 void main() {

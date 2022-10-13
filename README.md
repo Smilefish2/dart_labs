@@ -7,9 +7,9 @@ Use the way of developing command-line applications to practice and learn the da
 # Run & Build
 ```
 # Run
-dart run bin/learn_dart_with_cli.dart  dart-by-example:hello_world
+dart run bin/dart_labs.dart  dart-by-example:hello_world
 # Build
-dart2native bin/learn_dart_with_cli.dart -o bin/learn_dart_with_cli
+dart2native bin/dart_labs.dart -o bin/dart_labs
 ```
 
 # package:rust-by-example
